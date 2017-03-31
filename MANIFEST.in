@@ -1,6 +1,8 @@
 include README.md
 include LICENSE
 
+recursive-include LFPy *.pyx
+
 recursive-include examples *.py
 recursive-include examples *.ipynb
 recursive-include examples *.hoc

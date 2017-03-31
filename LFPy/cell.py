@@ -1397,7 +1397,7 @@ class Cell(object):
                 allsegnames.append((segidx, '%s' % sec.name(), seg.x))
                 segidx += 1
         
-        return allsegnames[idx]
+        return [allsegnames[i] for i in idx]
 
     def _collect_pt3d(self):
         '''collect the pt3d info, for each section'''

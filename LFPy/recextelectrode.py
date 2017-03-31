@@ -84,7 +84,7 @@ class RecExtElectrodeSetup(object):
         try:
             assert((self.x.size==self.y.size) and (self.x.size==self.z.size))
         except AssertionError as ae:
-            raise ae, "The number of elements in [x, y, z] must be identical"
+            raise ae("The number of elements in [x, y, z] must be identical")
         
         self.color = color
         self.marker = marker
